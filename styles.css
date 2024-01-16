@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.block {
+    box-sizing: border-box;
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 767px) {
+
+    /* При уменьшении экрана меняем ширину блоков для 2 линий */
+    .block {
+        width: 100%;
+        margin: 1% 0;
+    }
+}
